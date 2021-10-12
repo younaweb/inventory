@@ -1,5 +1,6 @@
 import Login from '../pages/auth/Login.vue'
 import Register from '../pages/auth/Register.vue'
+import Home from '../pages/Home.vue'
 
 import VueRouter from "vue-router";
 import Vue from "vue";
@@ -20,6 +21,11 @@ const router = new VueRouter({
             path: '/register',
             component: Register,
             name: 'register'
+        },
+        {
+            path: '/home',
+            component: Home,
+            name: 'home'
         }
     ]
 })
